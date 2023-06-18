@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiteBuddy</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/b8fb541877.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+    <!-- Header Section containing the Navigation Bar -->
+    <header class="header">
+        <a class="logo" href="#">BiteBuddy</a>
+        <nav class="navbar">
+            <a class = "navbar-hyperlinks" href="/"><i class="fas fa-home"></i></i> Home</a>
+            <a class = "navbar-hyperlinks" href="/restaurants.html"><i class="fas fa-map-marker-alt"></i> Find a Restaurant</a>
+            <a href='/about.html' class = "navbar-hyperlinks" ><i class="fa fa-question-circle"></i> About Us</a>
+            <a class = "navbar-hyperlinks" href="/contact.html"><i class="fas fa-phone"></i> Contact Us</a>
+            <a class = "navbar-hyperlinks" href="" class="btn">Login/Signup</a>
+            <!-- <div class = "navbar-hyperlinks" onclick="window.location.href='/about.html';">Check2</div>
+            <button class = "navbar-hyperlinks" onclick="window.location.href='/about.html';">About Us</button> -->
+        </nav>
+        <!-- Hamburger -->
+        <div class="hamburger">
+            <img src="./images/icons8-circled-menu-50.png" alt="" />
+        </div>
+    </header>    
+
+    <!-- Carousel Section containing the carousel of different dishes -->
+    <section class="carousel-section">
+        <div class="container">
+            <div class="carousel">
+                <input type="radio" name="slides" checked="checked" id="slide-1">
+                <input type="radio" name="slides" id="slide-2">
+                <input type="radio" name="slides" id="slide-3">
+                <input type="radio" name="slides" id="slide-4">
+                <input type="radio" name="slides" id="slide-5">
+                <input type="radio" name="slides" id="slide-6">
+                <ul class="carousel__slides">
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="./images/focused-on-you-grDcbeK2MRY-unsplash.jpg" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">
+                                    Photo by <a
+                                        href="https://unsplash.com/@focusedonyou?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Focused
+                                        on You</a> on <a
+                                        href="https://unsplash.com/photos/grDcbeK2MRY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                </span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="./images/swapnil-dwivedi-Nl8Oa6ZuNcA-unsplash.jpg" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">
+                                    Photo by <a
+                                        href="https://unsplash.com/@momentance?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Swapnil
+                                        Dwivedi</a> on <a
+                                        href="https://unsplash.com/images/food/cake?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                </span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="./images/brooke-lark-8beTH4VkhLI-unsplash.jpg" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">
+                                    Photo by <a
+                                        href="https://unsplash.com/@brookelark?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brooke
+                                        Lark</a> on <a
+                                        href="https://unsplash.com/images/food/ice-cream?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                </span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="./images/sk-uVPV_nV17Tw-unsplash.jpg" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">
+                                    Photo by <a
+                                        href="https://unsplash.com/@rollelflex_graphy726?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">sk</a>
+                                    on <a
+                                        href="https://unsplash.com/photos/uVPV_nV17Tw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                </span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="./images/kelvin-t-AcA8moIiD3g-unsplash.jpg" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">
+                                    Photo by <a
+                                        href="https://unsplash.com/@gogofoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kelvin
+                                        T</a> on <a
+                                        href="https://unsplash.com/images/food/pizza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                </span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="./images/deepal-tamang-5oF7d_hPJG4-unsplash.jpg" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">
+                                    Photo by <a
+                                        href="https://unsplash.com/@deepal_tamang?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Deepal
+                                        Tamang</a> on <a
+                                        href="https://unsplash.com/photos/5oF7d_hPJG4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                </span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+                <ul class="carousel__thumbnails">
+                    <li>
+                        <label for="slide-1"><img src="./images/focused-on-you-grDcbeK2MRY-unsplash.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-2"><img src="./images/swapnil-dwivedi-Nl8Oa6ZuNcA-unsplash.jpg"
+                                alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-3"><img src="./images/brooke-lark-8beTH4VkhLI-unsplash.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-4"><img src="./images/sk-uVPV_nV17Tw-unsplash.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-5"><img src="./images/kelvin-t-AcA8moIiD3g-unsplash.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-6"><img src="./images/deepal-tamang-5oF7d_hPJG4-unsplash.jpg" alt=""></label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <h1 class = "card-section-header">Restaurants Nearby </h1>
+    <p class = "card-section-caption">Explore trend-driven lists of the best restaurants, cafes, pubs, and bars in Mumbai.    </p>
+    <hr class="styled-line">
+    <section class="card-section">
+
+        <div class="ft-recipe">
+            <div class="ft-recipe__thumb">
+                <h3>Subway</h3>
+                <img src="./images/ola-mishchenko-XqYlvd5DGKA-unsplash.jpg"
+                    alt="Subway-img" />
+            </div>
+
+            <div class="ft-recipe__content">
+                <header class="content__header">
+                    <div class="row-wrapper">
+                        <h2 class="recipe-title">Healthy Food, Sandwich</h2>
+                        <div class="user-rating"></div>
+                    </div>
+                    <ul class="recipe-details">
+                        <li class="recipe-details-item time">
+                            <i class="fa-regular fa-clock"></i>
+                            <p class="value">20-25</p><span class="title">Minutes</span>
+                        </li>
+
+                        <li class="recipe-details-item ingredients">
+                            <i class="fa-regular fa-map"></i>
+                            <p class="value">2</p> <span class="title">km</span>
+                        </li>
+
+                        <li class="recipe-details-item servings">
+                            <i class="fa-sharp fa-regular fa-credit-card"></i>
+                            <p class="value">₹250</p> <span class="title"> for one</span>
+                        </li>
+                    </ul>
+                </header>
+
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo massa vitae urna maximus, ac efficitur nulla varius. Integer at odio vitae tortor malesuada efficitur.
+                </p>
+
+                <footer class="content__footer"><a href="#">View Menu</a></footer>
+            </div>
+        </div>
+
+        <div class="ft-recipe">
+            <div class="ft-recipe__thumb">
+                <h3>Domino's Pizza</h3>
+                <img src="./images/pexels-christina-petsos-11568775.jpg"
+                    alt="Dominos-img Unrecognizable Hand Sprinkling Salt on Appetizing Pizza" />
+            </div>
+
+            <div class="ft-recipe__content">
+                <header class="content__header">
+                    <div class="row-wrapper">
+                        <h2 class="recipe-title">Pizza, Italian, Pasta</h2>
+                        <div class="user-rating"></div>
+                    </div>
+                    <ul class="recipe-details">
+                        <li class="recipe-details-item time">
+                            <i class="fa-regular fa-clock"></i>
+                            <p class="value">25-30</p><span class="title">Minutes</span>
+                        </li>
+
+                        <li class="recipe-details-item ingredients">
+                            <i class="fa-regular fa-map"></i>
+                            <p class="value">1</p> <span class="title">km</span>
+                        </li>
+
+                        <li class="recipe-details-item servings">
+                            <i class="fa-sharp fa-regular fa-credit-card"></i>
+                            <p class="value">₹200</p> <span class="title"> for one</span>
+                        </li>
+                    </ul>
+                </header>
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo massa vitae urna maximus, ac efficitur nulla varius. Integer at odio vitae tortor malesuada efficitur.
+                </p>
+
+                <footer class="content__footer"><a href="#">View Menu</a></footer>
+            </div>
+        </div>
+
+        <div class="ft-recipe">
+            <div class="ft-recipe__thumb">
+                <h3>Behrouz Biriyani</h3>
+                <img src="./images/pexels-rajesh-tp-1624487.jpg"
+                    alt="behrouz-biriyani-img Close-up Photo of Biryani Dish" />
+            </div>
+
+            <div class="ft-recipe__content">
+                <header class="content__header">
+                    <div class="row-wrapper">
+                        <h2 class="recipe-title">Biriyani, Kebab</h2>
+                        <div class="user-rating"></div>
+                    </div>
+                    <ul class="recipe-details">
+                        <li class="recipe-details-item time">
+                            <i class="fa-regular fa-clock"></i>
+                            <p class="value">25-30</p><span class="title">Minutes</span>
+                        </li>
+
+                        <li class="recipe-details-item ingredients">
+                            <i class="fa-regular fa-map"></i>
+                            <p class="value">1</p> <span class="title">km</span>
+                        </li>
+
+                        <li class="recipe-details-item servings">
+                            <i class="fa-sharp fa-regular fa-credit-card"></i>
+                            <p class="value">₹400</p> <span class="title"> for one</span>
+                        </li>
+                    </ul>
+                </header>
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo massa vitae urna maximus, ac efficitur nulla varius. Integer at odio vitae tortor malesuada efficitur.
+                </p>
+
+                <footer class="content__footer"><a href="#">View Menu</a></footer>
+            </div>
+        </div>
+
+        <div class="ft-recipe">
+            <div class="ft-recipe__thumb">
+                <h3>KFC</h3>
+                <img src="./images/aleks-dorohovich-HYpXP6Zk1dw-unsplash.jpg"
+                    alt="KFC-img KFC treats in a KFC bucket" />
+            </div>
+
+            <div class="ft-recipe__content">
+                <header class="content__header">
+                    <div class="row-wrapper">
+                        <h2 class="recipe-title">Fast Food, Burger</h2>
+                        <div class="user-rating"></div>
+                    </div>
+                    <ul class="recipe-details">
+                        <li class="recipe-details-item time">
+                            <i class="fa-regular fa-clock"></i>
+                            <p class="value">30-35</p><span class="title">Minutes</span>
+                        </li>
+
+                        <li class="recipe-details-item ingredients">
+                            <i class="fa-regular fa-map"></i>
+                            <p class="value">2</p> <span class="title">km</span>
+                        </li>
+
+                        <li class="recipe-details-item servings">
+                            <i class="fa-sharp fa-regular fa-credit-card"></i>
+                            <p class="value">₹300</p> <span class="title"> for one</span>
+                        </li>
+                    </ul>
+                </header>
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo massa vitae urna maximus, ac efficitur nulla varius. Integer at odio vitae tortor malesuada efficitur.
+                </p>
+
+                <footer class="content__footer"><a href="#">View Menu</a></footer>
+            </div>
+        </div>
+
+        <div class="ft-recipe">
+            <div class="ft-recipe__thumb">
+                <h3>Frozen Bottle</h3>
+                <img src="./images/pexels-valeria-boltneva-1169004.jpg"
+                    alt="Frozen-bottle-img Person Holding Saucer With Mug of Chocolate Ice Cream Coffee" />
+            </div>
+
+            <div class="ft-recipe__content">
+                <header class="content__header">
+                    <div class="row-wrapper">
+                        <h2 class="recipe-title">Shake, Beverages</h2>
+                        <div class="user-rating"></div>
+                    </div>
+                    <ul class="recipe-details">
+                        <li class="recipe-details-item time">
+                            <i class="fa-regular fa-clock"></i>
+                            <p class="value">20-25</p><span class="title">Minutes</span>
+                        </li>
+
+                        <li class="recipe-details-item ingredients">
+                            <i class="fa-regular fa-map"></i>
+                            <p class="value">2</p> <span class="title">km</span>
+                        </li>
+
+                        <li class="recipe-details-item servings">
+                            <i class="fa-sharp fa-regular fa-credit-card"></i>
+                            <p class="value">₹250</p> <span class="title"> for one</span>
+                        </li>
+                    </ul>
+                </header>
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo massa vitae urna maximus, ac efficitur nulla varius. Integer at odio vitae tortor malesuada efficitur.
+                </p>
+
+                <footer class="content__footer"><a href="#">View Menu</a></footer>
+            </div>
+        </div>
+
+        <div class="ft-recipe">
+            <div class="ft-recipe__thumb">
+                <h3>Chowman</h3>
+                <img src="./images/pexels-engin-akyurt-2456435.jpg"
+                    alt="Chowman-img Close-Up Photo of Cooked Noodles" />
+            </div>
+
+            <div class="ft-recipe__content">
+                <header class="content__header">
+                    <div class="row-wrapper">
+                        <h2 class="recipe-title">Chinese, Asian</h2>
+                        <div class="user-rating"></div>
+                    </div>
+                    <ul class="recipe-details">
+                        <li class="recipe-details-item time">
+                            <i class="fa-regular fa-clock"></i>
+                            <p class="value">35-40</p><span class="title">Minutes</span>
+                        </li>
+
+                        <li class="recipe-details-item ingredients">
+                            <i class="fa-regular fa-map"></i>
+                            <p class="value">6</p> <span class="title">km</span>
+                        </li>
+
+                        <li class="recipe-details-item servings">
+                            <i class="fa-sharp fa-regular fa-credit-card"></i>
+                            <p class="value">₹250</p> <span class="title"> for one</span>
+                        </li>
+                    </ul>
+                </header>
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo massa vitae urna maximus, ac efficitur nulla varius. Integer at odio vitae tortor malesuada efficitur.
+                </p>
+
+                <footer class="content__footer"><a href="#">View Menu</a></footer>
+            </div>
+        </div>
+
+        <div class="ft-recipe">
+            <div class="ft-recipe__thumb">
+                <h3>Domino's Pizza</h3>
+                <img src="./images/pexels-christina-petsos-11568775.jpg"
+                    alt="Dominos-img-Unrecognizable Hand Sprinkling Salt on Appetizing Pizza" />
+            </div>
+
+            <div class="ft-recipe__content">
+                <header class="content__header">
+                    <div class="row-wrapper">
+                        <h2 class="recipe-title">Pizza, Italian, Pasta</h2>
+                        <div class="user-rating"></div>
+                    </div>
+                    <ul class="recipe-details">
+                        <li class="recipe-details-item time">
+                            <i class="fa-regular fa-clock"></i>
+                            <p class="value">25-30</p><span class="title">Minutes</span>
+                        </li>
+
+                        <li class="recipe-details-item ingredients">
+                            <i class="fa-regular fa-map"></i>
+                            <p class="value">1</p> <span class="title">km</span>
+                        </li>
+
+                        <li class="recipe-details-item servings">
+                            <i class="fa-sharp fa-regular fa-credit-card"></i>
+                            <p class="value">₹200</p> <span class="title"> for one</span>
+                        </li>
+                    </ul>
+                </header>
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo massa vitae urna maximus, ac efficitur nulla varius. Integer at odio vitae tortor malesuada efficitur.
+                </p>
+
+                <footer class="content__footer"><a href="#">View Menu</a></footer>
+            </div>
+        </div>
+
+        <div class="ft-recipe">
+            <div class="ft-recipe__thumb">
+                <h3>Domino's Pizza</h3>
+                <img src="./images/pexels-christina-petsos-11568775.jpg"
+                    alt="Dominos-img-Unrecognizable Hand Sprinkling Salt on Appetizing Pizza" />
+            </div>
+
+            <div class="ft-recipe__content">
+                <header class="content__header">
+                    <div class="row-wrapper">
+                        <h2 class="recipe-title">Pizza, Italian, Pasta</h2>
+                        <div class="user-rating"></div>
+                    </div>
+                    <ul class="recipe-details">
+                        <li class="recipe-details-item time">
+                            <i class="fa-regular fa-clock"></i>
+                            <p class="value">25-30</p><span class="title">Minutes</span>
+                        </li>
+
+                        <li class="recipe-details-item ingredients">
+                            <i class="fa-regular fa-map"></i>
+                            <p class="value">1</p> <span class="title">km</span>
+                        </li>
+
+                        <li class="recipe-details-item servings">
+                            <i class="fa-sharp fa-regular fa-credit-card"></i>
+                            <p class="value">₹200</p> <span class="title"> for one</span>
+                        </li>
+                    </ul>
+                </header>
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo massa vitae urna maximus, ac efficitur nulla varius. Integer at odio vitae tortor malesuada efficitur.
+                </p>
+
+                <footer class="content__footer"><a href="#">View Menu</a></footer>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="./js/index.js"> </script>
+</body>
+
+</html>
