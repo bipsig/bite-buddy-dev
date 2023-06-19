@@ -1,3 +1,14 @@
+// This section ofJavascript deals with the Pre Loader and hence Decides the time for which the pre-loader shall be displayed when the page reloads
+const preloader = document.querySelector(".preloader");
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    preloader.style.display = "none";
+  }, 3000);
+});
+
+
+
 /* This section of Javascript deals with the Navigation Bar in the header section. It makes the navigtion bar responsive to window size and hence converting the horizontal navigation menu into a hamburger menu when the size of the window becomes small, say for Mobile screen. */
 const header = document.querySelector('.header');
 const scrollLink = document.querySelectorAll('.navbar a:not(:last-child)');
@@ -59,12 +70,4 @@ function resumeSlide() {
   slideInterval = setInterval(nextSlide, 3000);
 }
 
-
-const preloader = document.querySelector(".preloader");
-
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    preloader.style.display = "none";
-  }, 3000);
-});
 

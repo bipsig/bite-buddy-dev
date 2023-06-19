@@ -1,6 +1,6 @@
 /* =========== CSS Variables =========== */
 
-:root {
+/* :root {
     --black: #1f1f1f;
     --white: #fff;
     --yellow: #ffc554;
@@ -11,9 +11,18 @@
     --grey: #737373;
     --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
     --transition: all 0.2s linear;
+} */
+
+:root {
+    --black: #1f1f1f;
+    --white: #ffffff;
+    --pageBlue: #0570b4;
+    --pageLightBlue: #38cac7;
+    --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    --transition: all 0.2s linear;
 }
 
-/* =========== Basic Reset =========== */
+/* ~~~~~ Basic Styling to reset all the pre-applied CSS style ~~~~~ */
 
 *,
 *::after,
@@ -28,49 +37,62 @@ html {
     box-sizing: border-box;
 }
 
-/* =========== Body =========== */
-
 body {
-    font-family: 'Arvo', serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--black);
 }
 
-/* =========== Links =========== */
+/* Links */
 
 a {
     text-decoration: none;
     color: inherit;
 }
 
-/* =========== List Styles =========== */
+/* List Styles */
 
 li {
     list-style: none;
 }
 
-/* =========== Images =========== */
+/* Images */
 
 img {
     height: 100%;
 }
 
-/* =========== Sections =========== */
+/* Sections */
 
 section {
     padding: 2rem 9%;
 }
 
-/* =========== Custom Classes =========== */
 
 
-.logo {
-    font-size: 3.6rem;
-    font-weight: 700;
+/* ~~~~~ Pre Loader Section Styling ~~~~~ */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000000;
+}
+  
+  .preloader img {
+    width: 20rem;
+    height: 20rem;
 }
 
-/* =========== Header =========== */
+
+
+/* ~~~~~~~~~~~~~~ Navigation Bar Styling ~~~~~~~~~~~~~~~ */
 
 .header {
     position: fixed;
@@ -87,15 +109,17 @@ section {
     z-index: 1000;
 }
 
-.header .hamburger img {
-    width: 3rem;
+/* Logo "BiteBuddy" Styling */
+.logo {
+    font-size: 3.6rem;
+    font-weight: 900;
 }
 
-.header .hamburger {
-    display: none;
+.logo .blue-text {
+    color: var(--pageBlue);
 }
 
-/* =========== Navbar =========== */
+/* NavBar Styling */
 
 .navbar {
     display: flex;
@@ -104,7 +128,7 @@ section {
 
 .navbar .navbar-hyperlinks {
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 600;
     transition: var(--transition);
     padding: 1rem;
     border-bottom: 2px solid transparent;
@@ -113,7 +137,7 @@ section {
 }
 
 .navbar .navbar-hyperlinks:not(:last-child) {
-    margin-right: 3rem; /* Increase the margin as desired */
+    margin-right: 3rem;
 }
 
 .navbar .navbar-hyperlinks i {
@@ -121,26 +145,34 @@ section {
 }
 
 .navbar .navbar-hyperlinks:hover {
-    color: var(--yellow);
-    border-color: var(--yellow);
+    color: var(--pageLightBlue);
+    border-color: var(--pageLightBlue);
 }
 
-/* =========== Buttons =========== */
-
-.btn {
+.login-btn {
     display: inline-block;
-    color: var(--yellow);
-    background-color: var(--btn-yellow);
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--pageBlue);
     padding: 1rem;
     border-radius: 0.5rem;
     transition: var(--transition);
 }
 
-.btn:hover {
+.login-btn:hover {
     box-shadow: var(--box-shadow);
 }
 
-/* =========== Media Queries =========== */
+/* Hamburger Menu Styling */
+.header .hamburger img {
+    width: 3rem;
+}
+
+.header .hamburger {
+    display: none;
+}
+
+/* ~~~~~ Media Queries for Navigation Bar ~~~~~ */
 
 @media (max-width: 996px) {
     .logo {
@@ -414,8 +446,8 @@ html {
 }
 
 body {
-  background: var(--bodyBg);
-  font-family: var(--bodyFont);
+  /*background: var(--bodyBg);*/
+  /*font-family: var(--bodyFont);*/
   color: var(--textColor);
   line-height: 1.5;
 }
@@ -597,25 +629,6 @@ a {
     width: calc(100% - 20px);
   }
 }
-
-
-.preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10000000;
-  }
-  
-  .preloader img {
-    width: 20rem;
-    height: 20rem;
-  }
 
 
 
