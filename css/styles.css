@@ -18,6 +18,7 @@
     --white: #ffffff;
     --pageBlue: #0570b4;
     --pageLightBlue: #38cac7;
+    --bg-grey: #d7dcdd;
     --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
     --transition: all 0.2s linear;
 }
@@ -434,7 +435,7 @@ section {
 
 /* ~~~~~~~~~~~~~~ Card Section Styling ~~~~~~~~~~~~~~~ */
 .cards-complete-section {
-    background-color: #D7DCDD;
+    background-color: var(--bg-grey);
 }
   .card-section-header{
     padding: 0% 7% 0%;
@@ -594,75 +595,79 @@ section {
 
 
 
-
-  section.app {
-    margin: 10% 0 0;
+/* ~~~~~~~~~~~~~~ App Section Styling ~~~~~~~~~~~~~~~ */
+  section.app-section {
     border-radius: 0.5rem;
-    background-color: var(--pageLightBlue);
+    background-color: var(--pageBlue);
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     position: relative;
-    padding: 22rem 0;
+    padding: 30rem 0;
   }
   
-  section.app .image {
+  section.app-section .app-section-image {
     position: absolute;
-    left: 10%;
+    left: 5%;
   }
   
-  section.app .image img {
-    width: 100%;
+  section.app-section .app-section-image img {
+    width: 120%;
   }
   
-  section.app .content {
+  section.app-section .app-section-content {
     position: absolute;
-    right: 5%;
+    right: 15%;
     width: 45%;
   }
   
-  section.app .content h3 {
+  section.app-section .app-section-content h3 {
+    color: var(--white);
     font-size: 4rem;
+    font-weight: 700;
     margin-bottom: 3rem;
   }
   
-  section.app .content p {
+  section.app-section .app-section-content .app-section-content-para {
+    color: var(--white);
     margin-bottom: 3rem;
   }
   
-  section.app .content .links img {
-    margin-right: 3rem;
+  section.app-section .app-section-content .links img {
+    margin: 10% 7%;
   }
 
+
+/* ~~~~~ Media Queries for App Section ~~~~~ */
   @media (max-width: 1200px) {
-    section.app .image {
+    section.app-section .app-section-image {
       max-width: 20rem;
     }
   }
   
   @media (max-width: 768px) {
-    section.app .image {
+    section.app-section .app-section-image {
       display: none;
     }
   
-    section.app {
+    section.app-section {
       grid-template-columns: 1fr;
       padding: 20rem 0;
       margin: 5rem 9%;
     }
   
-    section.app .content {
+    section.app-section .content {
       width: 85%;
       left: 50%;
       transform: translateX(-50%);
     }
   
-    section.app .content h3 {
+    section.app-section .content h3 {
       font-size: 3.5rem;
       margin-bottom: 2rem;
     }
   
-    section.app .content .links img {
+    section.app-section .content .links img {
       width: 8rem;
       margin-right: 0;
     }
@@ -670,9 +675,9 @@ section {
   
 
 
-
+/* ~~~~~~~~~~~~~~ Footer Section Styling ~~~~~~~~~~~~~~~ */
   .footer .top {
-    background-color: var(--footer-yellow);
+    background-color: var(--bg-grey);
     padding: 10rem 9%;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -684,16 +689,7 @@ section {
     gap: 3rem;
   }
   
-  .footer .bottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.5rem 0;
-    background-color: var(--deep-yellow);
-  }
-  
   .footer .top .content p {
-    color: var(--grey);
     margin-top: 2rem;
     width: 90%;
   }
@@ -705,12 +701,7 @@ section {
   
   .footer .top .link a {
     display: inline-block;
-    color: var(--grey);
     margin-bottom: 1rem;
-  }
-  
-  .footer .top .link span {
-    color: var(--grey);
   }
   
   .footer .top .link a {
@@ -726,6 +717,15 @@ section {
   .footer .top .link div img {
     margin-right: 1rem;
   }
+
+  .bottom {
+    color: var(--white);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0; 
+    background-color: var(--pageBlue);
+}
 
   @media (max-width: 996px) {
   .footer .top {
