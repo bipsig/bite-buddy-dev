@@ -40,7 +40,7 @@ hamburger.addEventListener('click', () => {
 
 /* This section of Javascript deals with the Carousel Section of our page, which automatically slide the slides of different foods. */
 const slides = document.querySelectorAll('.carousel input[name="slides"]');
-const thumbnails = document.querySelectorAll('.carousel__thumbnails label');
+const thumbnails = document.querySelectorAll('.carousel-thumbnails label');
 let currentSlide = 0;
 let slideInterval = setInterval(nextSlide, 3000);
 const carousel = document.querySelector('.carousel');
