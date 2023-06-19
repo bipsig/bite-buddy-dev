@@ -1,5 +1,18 @@
+/* ~~~~~~~~ CSS Variables ~~~~~~~~ */
+
+:root {
+  --black: #1f1f1f;
+  --white: #ffffff;
+  --pageBlue: #0570b4;
+  --pageLightBlue: #38cac7;
+  --bg-grey: #d7dcdd;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  --transition: all 0.2s linear;
+}
+
+/* ~~~~~~~ First Section CSS Styles ~~~~~~~~~ */
 .home {
-    padding-top: 13rem;
+    padding-top: 2.5%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -17,27 +30,12 @@
   }
   
   .home .content p {
-    color: var(--grey);
+    color: var(--black);
     font-size: 1.8rem;
     margin-bottom: 2rem;
   }
 
-  .home .content .home-btn {
-    display: inline-block;
-    color: var(--white);
-    font-weight: 500;
-    border-radius: 0.5rem;
-    background-color: var(--yellow);
-    padding: 1rem 1.5rem;
-    margin-top: 1rem;
-    transition: var(--transition);
-  }
-  
-  .home .content .home-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--box-shadow);
-  }
-
+  /* First Section Media Queries */
   @media (max-width: 999px) {
     .home .content h1 {
       font-size: 4rem;
@@ -65,46 +63,37 @@
     }
   }
 
-
-
-
-
-
+  /* ~~~~~~~ Second Section CSS Styles ~~~~~~~~~ */
   section.services {
-    background-color: var(--bg-yellow);
+    background-color: var(--pageLightBlue);
     padding: 5rem 9%;
   }
   
-  .services .top {
+  .services .services-top {
     text-align: center;
     margin-bottom: 5rem;
   }
   
-  .services .top h2 {
+  .services .services-top h2 {
     font-size: 4rem;
     margin-bottom: 1.5rem;
   }
   
-  .services .top p {
+  .services .services-top p {
+    color: var(--white);
     width: 80%;
     margin: 0 auto;
     font-size: 1.8rem;
     color: var(--grey);
   }
 
-  .services .bottom {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 3rem;
-  }
-
-  .services .bottom {
+  .services .services-bottom {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 3rem;
   }
   
-  .services .bottom .box {
+  .services .services-bottom .box {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -112,62 +101,53 @@
     border-radius: 0.5rem;
   }
   
-  .services .bottom .box:hover {
+  .services .services-bottom .box:hover {
     background-color: var(--white);
     box-shadow: var(--box-shadow);
   }
   
-  .services .bottom .box img {
+  .services .services-bottom .box img {
     height: 6rem;
   }
   
-  .services .bottom .box h4 {
+  .services .services-bottom .box h4 {
     font-size: 2.4rem;
     margin: 1.5rem 0;
   }
   
-  .services .bottom .box p {
+  .services .services-bottom .box p {
     color: var(--grey);
     margin-bottom: 1.5rem;
   }
-  
-  .services .bottom .box a {
-    display: inline-block;
-    font-weight: 500;
-  }
-  
-  .services .bottom .box a img {
-    height: 1rem;
-  }
 
+  /* Second Section Media Queries */
   @media (max-width: 768px) {
-    .services .top {
+    .services .services-top {
       margin-bottom: 3rem;
     }
   
-    .services .top p {
+    .services .services-top p {
       width: 100%;
       font-size: inherit;
     }
   
-    .services .top h2 {
+    .services .services-top h2 {
       font-size: 3rem;
       margin-bottom: 1rem;
     }
   
-    .services .bottom .box {
+    .services .services-bottom .box {
       padding: 1.5rem;
     }
   }  
 
-
-
-
+  /* ~~~~~~~ Third Section CSS Styles ~~~~~~~~~ */
   section.about {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 5rem;
+    padding-top: 5%;
     padding-bottom: 5%;
   }
   
@@ -182,11 +162,16 @@
   }
   
   .about .content p {
-    color: var(--grey);
+    color: var(--black);
     width: 90%;
     margin-bottom: 3rem;
   }
 
+  .about-2 {
+    background-color: var(--bg-grey);
+  }
+
+  /* Third Section Media Queries */
   @media (max-width: 768px) {
     section.about {
       grid-template-columns: 1fr;

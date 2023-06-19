@@ -1,17 +1,4 @@
-/* =========== CSS Variables =========== */
-
-/* :root {
-    --black: #1f1f1f;
-    --white: #fff;
-    --yellow: #ffc554;
-    --deep-yellow: #ffc727;
-    --bg-yellow: #fffaf1;
-    --btn-yellow: #fff4d4;
-    --footer-yellow: #fff9e9;
-    --grey: #737373;
-    --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
-    --transition: all 0.2s linear;
-} */
+/* ~~~~~~~~ CSS Variables ~~~~~~~~ */
 
 :root {
     --black: #1f1f1f;
@@ -23,8 +10,9 @@
     --transition: all 0.2s linear;
 }
 
-/* ~~~~~ Basic Styling to reset all the pre-applied CSS style ~~~~~ */
 
+
+/* ~~~~~ Basic Styling to reset all the pre-applied CSS style ~~~~~ */
 *,
 *::after,
 *::before {
@@ -116,10 +104,6 @@ section {
 .logo {
     font-size: 3.6rem;
     font-weight: 900;
-}
-
-.logo .blue-text {
-    color: var(--pageBlue);
 }
 
 /* NavBar Styling */
@@ -754,4 +738,7 @@ section {
   }
 }
 
+.blue-text {
+  color: var(--pageBlue);
+}
   

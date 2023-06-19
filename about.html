@@ -1,158 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BiteBuddy - About</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BiteBuddy - About</title>
 
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/about-styles.css"
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/about-styles.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
 
-    <script src="https://kit.fontawesome.com/b8fb541877.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b8fb541877.js" crossorigin="anonymous"></script>
 </head>
+
+
 <body>
 
-    <!-- Header Section containing the Navigation Bar -->
-    <header class="header">
-        <a class="logo" href="/index.html">BiteBuddy</a>
-        <nav class="navbar">
-            <div class = "navbar-hyperlinks" onclick="window.location.href='/index.html';"><i class="fas fa-home"></i></i> Home</div>
-            <div class = "navbar-hyperlinks" onclick="window.location.href='/restaurants.html';"><i class="fas fa-map-marker-alt"></i> Find a Restaurant</div>
-            <div class = "navbar-hyperlinks" onclick="window.location.href='/about.html';"><i class="fa fa-question-circle"></i> About Us</div>
-            <div class = "navbar-hyperlinks" onclick="window.location.href='/contact.html';"><i class="fas fa-phone"></i> Contact Us</div>
-            <!-- <a href = "/restaurants.html">Find a Restaurant</a> -->
-            <!-- <a href="/restaurants.html" class="navbar-hyperlinks"><i class="fas fa-map-marker-alt"></i> Find a Restaurant</a> -->
-            <!-- <a href='/about.html' class = "navbar-hyperlinks" ><i class="fa fa-question-circle"></i> About Us</a> -->
-            <!-- <a href="/contact.html" class = "navbar-hyperlinks"><i class="fas fa-phone"></i> Contact Us</a> -->
-            <a href="/login-register.html" class="btn" class = "navbar-hyperlinks">Login/Register</a>
-            <!-- <div class = "navbar-hyperlinks" onclick="window.location.href='/about.html';">Check2</div> -->
-            <!-- <button class = "navbar-hyperlinks" onclick="window.location.href='/about.html';">About Us</button> -->
-        </nav>
-        <!-- Hamburger -->
-        <div class="hamburger">
-            <img src="./images/icons8-circled-menu-50.png" alt="" />
-        </div>
-    </header>   
+  <!-- Header Section containing the Navigation Bar -->
+  <header class="header">
+    <a class="logo" href="/index.html">Bite<span class="blue-text">Buddy</span></a>
+
+    <nav class="navbar">
+      <div class="navbar-hyperlinks" onclick="window.location.href='/index.html';"><i class="fas fa-home"></i></i> Home
+      </div>
+      <div class="navbar-hyperlinks" onclick="window.location.href='/about.html';"><i class="fa fa-question-circle"></i>
+        About Us</div>
+      <div class="navbar-hyperlinks" onclick="window.location.href='/contact.html';"><i class="fas fa-phone"></i>
+        Contact Us</div>
+
+      <a href="/login-register.html" class="login-btn" class="navbar-hyperlinks">Login/Register</a>
+    </nav>
+
+    <!-- Hamburger Menu for smaller screens -->
+    <div class="hamburger">
+      <img src="./images/icons8-circled-menu-50.png" alt="" />
+    </div>
+  </header>
+
+  <!-- First Section  -->
+  <section class="home" id="home">
+    <div class="content">
+      <h1>Order Your Product <span class="blue-text">Easier & Faster.</span></h1>
+      <p>
+        BiteBuddy is a rapidly expanding online meal delivery marketplace that connects consumers and restaurants via its platform.
+      </p>
+    </div>
+
+    <div class="image">
+      <img src="./images/fotor-ai-20230619114736-removebg-preview.png" alt="img-not-available" />
+    </div>
+  </section>
+
+  <!-- Second Section  -->
+  <section class="services" id="services">
+    <div class="services-top">
+      <h2><span class="blue-text">Why</span> we are the best</h2>
+      <p>
+        Discover the epitome of convenience and satisfaction with BiteBuddy - your go-to online food delivery solution, providing unparalleled variety, efficiency, and customer satisfaction in just a few clicks.
+      </p>
+    </div>
+
+    <div class="services-bottom">
+      <div class="box">
+        <img src="./images/fast-delivery-about1.png" alt="" />
+        <h4>Free Delivery</h4>
+        <p>
+          Enjoy the irresistible flavors from your favorite restaurants delivered right to your doorstep, with BiteBuddy's exceptional free delivery service.
+        </p>
+      </div>
+
+      <div class="box">
+        <img src="./images/diet-about2.png" alt="" />
+        <h4>Healthy Foods</h4>
+        <p>
+          Discover a world of nutritious delights on BiteBuddy, where we prioritize your health by offering a wide selection of wholesome and nourishing meals from top-rated restaurants.
+        </p>
+      </div>
+
+      <div class="box">
+        <img src="./images/checkout-online.png" alt="" />
+        <h4>Online Ordering</h4>
+        <p>
+          Say goodbye to long queues and order your favorite meals effortlessly with BiteBuddy's seamless online ordering system, designed for your convenience.
+        </p>
+      </div>
+    </div>
+  </section>
 
 
-    <section class="home" id="home">
-        <div class="content">
-          <h1>Order Your Product <span class="yellow">Easier & Faster.</span></h1>
-          <p>
-            Delivero is a leading global online food delivery marketplace,
-            connecting consumers and restaurants through its platform in 24
-            countries.
-          </p>
-          <a href="#" class="home-btn">Go to Menu</a>
-        </div>
-        <div class="image">
-          <img src="./images/fotor-ai-20230619114736-removebg-preview.png" alt="img-not-available" />
-        </div>
-      </section>
+  <!-- Third Section  -->
+  <section>
+    <section class="about" id="about">
+      <div class="image">
+        <img src="./images/smartphone.png" alt="" />
+      </div>
 
-      <section class="services" id="services">
-        <div class="top">
-          <h2><span class="yellow">Why</span> We are the Best</h2>
-          <p>
-            Lorem ipsum is placeholder text commonly used in the graphic, print,
-            and publishing industries for previewing layouts and visual mockups.
-            Lorem ipsum is placeholder.
-          </p>
-        </div>
+      <div class="content">
+        <h3><span class="blue-text">Order</span> anytime and anywhere</h3>
+        <p>
+          Enjoy the freedom of placing food orders at your convenience, 24/7, from the comfort of your home, office, or even while traveling, thanks to BiteBuddy's accessible and user-friendly platform.
+        </p>
+      </div>
+    </section>
+
+    <section class="about about-2">
+      <div class="content">
+        <h3>
+          <span class="blue-text">Deliver</span> the products with best safety
+        </h3>
+
+        <p>
+          Rest assured knowing that BiteBuddy goes the extra mile to guarantee secure and hygienic delivery, providing you with peace of mind while enjoying your favorite meals.
+        </p>
+      </div>
+
+      <div class="image">
+        <img src="./images/safe.png" alt="" />
+      </div>
+    </section>
+
+    <section class="about about-3" style="gap: 3rem 13rem">
+      <div class="image">
+        <img src="./images/track.png" alt="" />
+      </div>
+
+      <div class="content">
+        <h3><span class="blue-text">Track</span> your order very easily</h3>
+
+        <p>
+          Stay in the loop and eliminate uncertainty by conveniently tracking your order in real-time, ensuring a seamless and transparent delivery experience with BiteBuddy.
+        </p>
+      </div>
+    </section>
+</section>
+
+<!-- App Section containing information about Android App -->
+<section class="app-section">
+
+  <div class="app-section-image">
+      <img src="./images/BiteBuddy_prev_ui.png" alt="" />
+  </div>
+
+  <div class="app-section-content">
+      <h3>Place your order through our app</h3>
+      <p class = "app-section-content-para">
+          You can easily place your order using our mobile app. Now you can            download our app for both IOS and Android mobiles.
+      </p>
   
-        <div class="bottom">
-          <div class="box">
-            <img src="./images/fast-delivery-about1.png" alt="" />
-            <h4>Free Delivery</h4>
-            <p>
-              Lorem ipsum dolor sit amet,adipiscing elit. Eu, montes, metus
-              porttitor consectetur pretium. Euismod imperdiet pellentesque cursus
-              in netus.
-            </p>
-            <a href="#">View More <img src="./images/btn-arrow.svg" alt="" /> </a>
-          </div>
-          <div class="box">
-            <img src="./images/diet-about2.png" alt="" />
-            <h4>Healthy Foods</h4>
-            <p>
-              Lorem ipsum dolor sit amet,adipiscing elit. Eu, montes, metus
-              porttitor consectetur pretium. Euismod imperdiet pellentesque cursus
-              in netus.
-            </p>
-            <a href="#">View More <img src="./images/btn-arrow.svg" alt="" /> </a>
-          </div>
-          <div class="box">
-            <img src="./images/checkout-online.png" alt="" />
-            <h4>Online Ordering</h4>
-            <p>
-              Lorem ipsum dolor sit amet,adipiscing elit. Eu, montes, metus
-              porttitor consectetur pretium. Euismod imperdiet pellentesque cursus
-              in netus.
-            </p>
-            <a href="#">View More <img src="./images/btn-arrow.svg" alt="" /> </a>
-          </div>
-        </div>
-      </section>
+      <div class="links">
+          <img src="./images/app-store.png" alt="" />
+          <img src="./images/google-play.png" alt="" />
+      </div>
+  </div>
+
+</section>
+
+
+
+<footer class="footer">
+  <div class="top">
+      <div class="content">
+          <a href="" class="logo">Bite<span class="blue-text">Buddy</span></a>
+          <p>
+              BiteBuddy is a rapidly expanding online meal delivery marketplace that connects consumers and restaurants via its platform.
+          </p>
+      </div>
+
+      <div class="links">
+          <div class="link">
+              <h4>Contact Information</h4>
+          <div>
+          
+          <img src="./images/location-cross.svg" alt="" />
+          <span>AC-191, Meghna Abasan, Kestopur, West Bengal</span>
+      </div>
+
+      <div>
+          <img src="./images/sms-tracking.svg" alt="" />
+          <span>bipashasinha525@gmail.com</span>
+      </div>
+  </div>
+
+  <div class="link">
+      <h4>Quick Links</h4>
+      <a href="#">Services</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Download</a>
+  </div>
+
+  <div class="link">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Term of Use</a>
+      <a href="#">Conditions</a>
+      <a href="#">Location</a>
+  </div>
+
+  <div class="link">
+      <h4>Connect with Us</h4>
+      <div>
+          <img src="./images/instagram.svg" alt="" />
+          <span>Instagram</span>
+      </div>
       
-      <section class="about" id="about">
-        <div class="image">
-          <img src="./images/smartphone.png" alt="" />
-        </div>
-        <div class="content">
-          <h3><span class="yellow">Order</span> anytime and anywhere</h3>
-          <p>
-            Lorem ipsum dolor sit amet,adipiscing elit. Eu, montes, metus
-            porttitor consectetur pretium. Euismod imperdiet pellentesque cursus
-            in netus.
-          </p>
-          <a href="#" class="btn">Make an Offer</a>
-        </div>
-      </section>
+      <div>
+          <img src="./images/twitter.svg" alt="" />
+          <span>Twitter</span>
+      </div>
+      
+      <div>
+          <img src="./images/facebook.svg" alt="" />
+          <span>Facebook</span>
+      </div>
+  </div>
 
-      <section class="about about-2">
-        <div class="content">
-          <h3>
-            <span class="yellow">Deliver</span> the products with best safety
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet,adipiscing elit. Eu, montes, metus
-            porttitor consectetur pretium. Euismod imperdiet pellentesque cursus
-            in netus.
-          </p>
-          <a href="#" class="btn">Make an Offer</a>
-        </div>
-  
-        <div class="image">
-          <img src="./images/safe.png" alt="" />
-        </div>
-      </section>
+</footer>
 
-      <section class="about about-3" style="gap: 3rem 13rem">
-        <div class="image">
-          <img src="./images/track.png" alt="" />
-        </div>
-  
-        <div class="content">
-          <h3><span class="yellow">Track</span> your order very easily</h3>
-          <p>
-            Lorem ipsum dolor sit amet,adipiscing elit. Eu, montes, metus
-            porttitor consectetur pretium. Euismod imperdiet pellentesque cursus
-            in netus.
-          </p>
-          <a href="#" class="btn">Track Now</a>
-        </div>
-      </section>
-  
-  
-  
+<div class="bottom">
+  <p>Copyright © 2023 BiteBuddy Pvt. Ltd. All rights reserved.</p>
+</div>
 
-
-    <script src="./js/index.js"> </script>
+  
+  <script src="./js/index.js"> </script>
 </body>
+
 </html>
