@@ -58,3 +58,13 @@ function pauseSlide() {
 function resumeSlide() {
   slideInterval = setInterval(nextSlide, 3000);
 }
+
+
+const preloader = document.querySelector(".preloader");
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    preloader.style.display = "none";
+  }, 3000);
+});
+
